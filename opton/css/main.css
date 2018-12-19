@@ -1630,7 +1630,7 @@ button {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition-property: color, background-color;
-  transition-duration: 0.1s; }
+  transition-duration: 0.15s; }
   .product-card__link:hover .product-card__tip {
     color: white;
     background-color: #157bd9; }
@@ -1966,28 +1966,31 @@ button {
   width: 100%;
   min-height: 106px;
   max-height: 219px;
-  overflow: hidden;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 0 0 8px 8px;
-  transition-property: min-height;
-  transition-duration: 0.2s; }
-  .service-card__link:hover .service-card__text {
-    min-height: 126px; }
+  border-radius: 0 0 8px 8px; }
+  .service-card__text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-property: height;
+    transition-duration: 0.2s; }
+  .service-card__link:hover .service-card__text::before {
+    height: 30px; }
   @media (min-width: 768px) {
     .service-card__text {
       min-height: 70px;
       padding-left: 10px;
-      padding-right: 10px; }
-      .service-card__link:hover .service-card__text {
-        min-height: 90px; } }
+      padding-right: 10px; } }
   @media (min-width: 1320px) {
     .service-card__text {
       min-height: 113px;
       padding-left: 32px;
-      padding-right: 32px; }
-      .service-card__link:hover .service-card__text {
-        min-height: 173px; } }
+      padding-right: 32px; } }
 
 .service-card__caption {
   font-weight: 500;
