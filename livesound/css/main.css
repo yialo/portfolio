@@ -2212,8 +2212,8 @@ ol {
     display: inline;
     padding: 0;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 32px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: none;
     background-color: transparent; }
@@ -2224,11 +2224,6 @@ ol {
   .main-navigation--footer .main-navigation__link {
     font-size: 16px;
     line-height: 24px; } }
-
-@media (min-width: 1840px) {
-  .main-navigation--header .main-navigation__link {
-    font-size: 24px;
-    line-height: 36px; } }
 
 .menu-controls__button {
   display: none;
@@ -2536,7 +2531,7 @@ ol {
       display: block;
       width: auto;
       margin-left: auto;
-      padding-top: 20px; } }
+      padding-top: 15px; } }
   @media (min-width: 1840px) {
     .page-header__navigation {
       padding-top: 30px; } }
@@ -2875,7 +2870,8 @@ ol {
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: rgba(0, 0, 0, 0.3); }
   @media (min-width: 768px) {
     .project-card__caption {
@@ -2892,7 +2888,7 @@ ol {
       max-height: 343px; } }
 
 .project-card__caption-text {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: white; }
