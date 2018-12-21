@@ -1,1 +1,0 @@
-$(".partners__list").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,variableWidth:!0});
