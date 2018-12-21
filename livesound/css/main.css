@@ -2867,6 +2867,7 @@ ol {
   align-items: center;
   width: 100%;
   max-height: 158px;
+  min-height: 80px;
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
