@@ -351,16 +351,9 @@ button {
 .roombox-aligner {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1760px;
   padding-left: 10px;
-  padding-right: 10px;
-  outline: 1px solid green;
-  outline-offset: -1px; }
-  @media (min-width: 768px) {
-    .roombox-aligner {
-      width: 768px; } }
-  @media (min-width: 1280px) {
-    .roombox-aligner {
-      width: 1280px; } }
+  padding-right: 10px; }
 
 .roombox-heading {
   font-weight: 900;
@@ -394,10 +387,12 @@ button {
   background-position-y: -200px; }
   @media (min-width: 768px) {
     .roombox-development {
-      background-image: url("../img/page-main__background--m.jpg"); } }
+      background-image: url("../img/page-main__background--m.jpg");
+      background-position-y: -300px; } }
   @media (min-width: 1280px) {
     .roombox-development {
-      background-image: url("../img/page-main__background--l.jpg"); } }
+      background-image: url("../img/page-main__background--l.jpg");
+      background-position-y: -600px; } }
 
 .roombox-development__container {
   padding-bottom: 1500px; }
@@ -418,7 +413,7 @@ button {
 .roombox-page-header__container {
   padding-top: 20px;
   padding-bottom: 30px; }
-  @media (min-width: 480px) {
+  @media (min-width: 500px) {
     .roombox-page-header__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -440,7 +435,7 @@ button {
   margin-right: auto;
   width: 300px;
   margin-bottom: 40px; }
-  @media (min-width: 480px) {
+  @media (min-width: 500px) {
     .roombox-page-header__logo {
       grid-area: 1 / 1 / 2 / 3;
       width: 400px;
@@ -459,7 +454,7 @@ button {
   padding-left: 0;
   list-style-type: none;
   color: #767676; }
-  @media (min-width: 480px) {
+  @media (min-width: 500px) {
     .roombox-page-header__list--overall {
       grid-area: 2 / 1 / 3 / 2; }
     .roombox-page-header__list--technologies {
@@ -478,7 +473,7 @@ button {
   line-height: 36px;
   font-family: "Gotham Pro", "Arial", sans-serif;
   text-align: center; }
-  @media (min-width: 480px) {
+  @media (min-width: 500px) {
     .roombox-page-header__list--overall .roombox-page-header__item {
       text-align: left; }
     .roombox-page-header__list--technologies .roombox-page-header__item {
@@ -539,6 +534,10 @@ button {
     .roombox-task__paragraph {
       font-size: 18px;
       line-height: 27px; } }
+  @media (min-width: 1600px) {
+    .roombox-task__paragraph {
+      font-size: 24px;
+      line-height: 32px; } }
 
 .roombox-task__numbering {
   font-weight: 500;
@@ -560,3 +559,13 @@ button {
 .roombox-video__content {
   display: block;
   width: 100%; }
+
+.roombox-video__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Gotham Pro", "Arial", sans-serif; }
+  @media (min-width: 768px) {
+    .roombox-video__link {
+      font-size: 24px;
+      line-height: 32px; } }
