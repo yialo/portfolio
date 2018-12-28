@@ -2536,14 +2536,16 @@ ol {
   @media (min-width: 768px) {
     .page-header__language-toggle {
       top: 160px;
-      left: 70px;
+      left: 160px;
       right: auto; } }
   @media (min-width: 1220px) {
     .page-header__language-toggle {
-      top: 180px; } }
+      top: 180px;
+      left: 80px; } }
   @media (min-width: 1840px) {
     .page-header__language-toggle {
-      top: 210px; } }
+      top: 210px;
+      left: 70px; } }
 
 .page-main {
   background-repeat: no-repeat;
