@@ -381,26 +381,25 @@ button {
           clip-path: inset(100%); }
 
 .roombox-development {
-  position: relative;
-  z-index: 0; }
+  position: relative; }
 
 .roombox-development__heading {
   text-align: center; }
 
 .roombox-development__content {
+  --roombox-development__content-vertical-shift-factor: -412;
   position: absolute;
-  top: 0;
+  top: calc(var(--roombox-development__content-vertical-shift-factor) * (100vw - 320px) / 768);
   left: 0;
   z-index: -1;
   width: 100%; }
   @media (min-width: 768px) {
     .roombox-development__content {
-      position: static;
-      overflow: hidden; } }
+      --roombox-development__content-vertical-shift-factor: -350; } }
 
 .roombox-development__image {
-  width: 100vw;
-  height: calc(100vw * 2958 / 768); }
+  width: 100%;
+  height: auto; }
 
 .roombox-logo__image {
   width: 100%;
