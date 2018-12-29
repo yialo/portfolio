@@ -2034,25 +2034,25 @@ ol {
 .language-toggle {
   position: relative; }
   .language-toggle::before {
+    font-weight: 400;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
     content: "RU";
     position: absolute;
     top: 2px;
     left: -25px;
+    letter-spacing: 1.2px;
+    color: white; }
+  .language-toggle::after {
     font-weight: 400;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 19px;
-    letter-spacing: 1.2px;
-    color: white; }
-  .language-toggle::after {
     content: "EN";
     position: absolute;
     top: 2px;
     right: -25px;
-    font-weight: 400;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 19px;
     letter-spacing: 1.2px;
     color: white; }
   @media (min-width: 1840px) {
@@ -2447,17 +2447,19 @@ ol {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .page-header__inner {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px; }
+  width: 320px;
+  padding: 30px 20px 20px; }
   @media (min-width: 768px) {
     .page-header__inner {
       display: flex;
+      width: auto;
       padding-top: 20px; } }
   @media (min-width: 1840px) {
     .page-header__inner {
+      width: 1840px;
       padding-left: 10px;
       padding-right: 100px; } }
 
@@ -2468,7 +2470,7 @@ ol {
 @media (min-width: 1220px) {
   .page-header__logo {
     margin-left: 0;
-    margin-right: 45px; } }
+    margin-right: 3.68852%; } }
 
 @media (min-width: 1840px) {
   .page-header__logo {
@@ -2508,7 +2510,10 @@ ol {
       display: block;
       width: auto;
       margin-left: auto;
-      margin-right: 45px; } }
+      margin-right: 3.68852%; } }
+  @media (min-width: 1840px) {
+    .page-header__navigation {
+      margin-right: 0; } }
 
 .page-header__socials {
   display: flex;
@@ -2536,16 +2541,16 @@ ol {
   @media (min-width: 768px) {
     .page-header__language-toggle {
       top: 160px;
-      left: 160px;
+      left: 163px;
       right: auto; } }
   @media (min-width: 1220px) {
     .page-header__language-toggle {
       top: 180px;
-      left: 80px; } }
+      left: 83px; } }
   @media (min-width: 1840px) {
     .page-header__language-toggle {
       top: 210px;
-      left: 70px; } }
+      left: 73px; } }
 
 .page-main {
   background-repeat: no-repeat;
