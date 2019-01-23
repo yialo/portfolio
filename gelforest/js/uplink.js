@@ -1,0 +1,1 @@
+$(document).ready(function(o){o(window).scroll(function(){o(this).scrollTop()>50?o(".page-footer__uplink").fadeIn("slow"):o(".page-footer__uplink").fadeOut("slow")}),o(".page-footer__uplink").click(function(){return o("html, body").animate({scrollTop:0},500),!1})});
