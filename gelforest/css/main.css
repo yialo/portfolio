@@ -498,6 +498,7 @@ button {
   text-transform: uppercase; }
 
 .areas {
+<<<<<<< HEAD
   padding-bottom: 45px;
   overflow-x: hidden; }
   .is-hidden .areas {
@@ -514,6 +515,23 @@ button {
   .is-hidden .areas__inner {
     -webkit-transform: translate(100%, 45px);
             transform: translate(100%, 45px); }
+||||||| merged common ancestors
+  background-color: white; }
+=======
+  overflow-x: hidden; }
+  .is-hidden .areas {
+    pointer-events: none; }
+
+.areas__inner {
+  background-color: white;
+  -webkit-transition: -webkit-transform ease-out 500ms;
+  transition: -webkit-transform ease-out 500ms;
+  transition: transform ease-out 500ms;
+  transition: transform ease-out 500ms, -webkit-transform ease-out 500ms; }
+  .is-hidden .areas__inner {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+>>>>>>> 4841e3fe0c16e28b959c3cf5d1d31a9c866d262a
 
 .areas__heading {
   position: absolute;
