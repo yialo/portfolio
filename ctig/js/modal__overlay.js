@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".modal__close-button").click(function(){html2canvas(document.body).then(function(o){$(".modal__overlay").css({"background-image":"url("+o.toDataURL("image/png")+")",filter:"blur(5px)",opacity:"1"})})})});

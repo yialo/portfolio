@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".logistics-crumbs__list--europe").slick({arrows:!1,infinite:!1,slidesToScroll:2,variableWidth:!0}),$(".logistics-crumbs__list--asia").slick({arrows:!1,infinite:!1,slidesToScroll:2,variableWidth:!0}),$(".logistics-crumbs__list--america").slick({arrows:!1,infinite:!1,slidesToScroll:1,variableWidth:!0})});
