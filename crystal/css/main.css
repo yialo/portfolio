@@ -628,16 +628,16 @@ button {
       top: auto;
       bottom: 28px;
       left: calc(100% + 24px);
-      width: 394px;
+      width: 372px;
       height: 100px;
       border-width: 4px 4px 0 0; }
     .crystal-magazine-picture--2::after {
       display: none; }
     .crystal-magazine-picture--3::after {
-      top: -128px;
+      top: -140px;
       bottom: auto;
-      left: 388px;
-      width: 462px;
+      left: 392px;
+      width: 458px;
       height: 100px;
       border-width: 4px 0 0 4px; } }
 
