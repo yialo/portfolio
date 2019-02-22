@@ -1,1 +1,0 @@
-$(document).ready(function(){var n=$(".page"),o=$(".navigation-toggle__button--opener"),i=$(".navigation-toggle__button--closer");o.click(function(){n.addClass("is-nav-shown"),i.focus()}),i.click(function(){n.removeClass("is-nav-shown is-certificates-shown"),o.focus()})});

@@ -1,1 +1,0 @@
-$(document).ready(function(){var o=$(".page"),a=$(".calculator-toggle__button"),l=$(".modal__close-button");a.click(function(a){a.preventDefault(),o.addClass("is-modal-shown")}),l.click(function(){o.removeClass("is-modal-shown")})});
