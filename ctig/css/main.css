@@ -3078,7 +3078,9 @@ button {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms; }
   @media (min-width: 768px) {
     .customs__headline {
       padding-left: 0;
@@ -3162,9 +3164,7 @@ button {
 
 .customs__title {
   position: relative;
-  margin-bottom: 16px;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms; }
+  margin-bottom: 16px; }
   @media (min-width: 768px) {
     .customs__title {
       margin-bottom: 24px; } }
