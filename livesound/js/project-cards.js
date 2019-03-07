@@ -1,0 +1,1 @@
+"use strict";lightbox.option({wrapAround:!0});
