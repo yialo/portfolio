@@ -576,6 +576,21 @@ html.lb-disable-scrolling {
 .lb-data .lb-close {
   background-image: url("../img/lightbox-close.png"); }
 
+.lb-headlineContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px; }
+
+.lb-headline {
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #cccccc; }
+
 :root {
   --page-header-bypass: 265px; }
   @media (min-width: 768px) {
@@ -3196,34 +3211,31 @@ ol {
       padding-right: 500px; } }
 
 .promo-slide__video-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 0;
-  padding-bottom: calc(100% / 16 * 9); }
-  .promo-slide__video-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/promo-slide__video-background.png"); }
+  display: none; }
+  @media (min-width: 1220px) {
+    .promo-slide__video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      z-index: -1;
+      display: block;
+      min-width: 100%;
+      height: 100%; }
+      .promo-slide__video-wrapper::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/promo-slide__video-background.png"); } }
 
 .promo-slide__video {
-  position: absolute;
+  position: relative;
   z-index: -1;
-  width: 100%;
-  height: auto; }
+  width: auto;
+  min-width: 100%;
+  min-height: 100%; }
 
 .promo-slide {
   width: 100%;
@@ -3231,7 +3243,7 @@ ol {
   background-image: url("../img/promo-slide-background-small.jpg");
   background-position: bottom;
   background-repeat: no-repeat; }
-  .promo-slide--2 {
+  .promo-slide--1 {
     position: relative;
     z-index: 0; }
   @media (min-width: 768px) {
