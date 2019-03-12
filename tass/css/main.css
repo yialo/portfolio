@@ -1,0 +1,708 @@
+/* Breakpoints */
+/* Colors */
+/* Components */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* Root custom properties */
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: a_bosanovacps;
+  font-display: swap;
+  src: url("../fonts/a_bosanovacps-regular-normal.woff2") format("woff2"), url("../fonts/a_bosanovacps-regular-normal.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: helveticaneuecyr;
+  font-display: swap;
+  src: url("../fonts/helveticaneuecyr-light-normal.woff2") format("woff2"), url("../fonts/helveticaneuecyr-light-normal.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: helveticaneuecyr;
+  font-display: swap;
+  src: url("../fonts/helveticaneuecyr-regular-normal.woff2") format("woff2"), url("../fonts/helveticaneuecyr-regular-normal.woff") format("woff"); }
+
+/* Animations */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "a_bosanovacps", "Arial", sans-serif;
+  letter-spacing: 0.75px;
+  min-width: 320px;
+  margin: 0;
+  font-style: normal;
+  line-height: 1;
+  color: #181818;
+  background-color: white; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img,
+svg,
+picture,
+video {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit; }
+
+button {
+  display: block;
+  cursor: pointer; }
+
+.tass-s_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1400px; }
+
+.tass-s_description {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.tass-s_picture__image {
+  width: 100%;
+  height: auto; }
+
+.tass-conditions__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 276px;
+  padding-bottom: 362px;
+  padding-left: 64px;
+  padding-right: 75px; }
+
+.tass-conditions__description {
+  width: 380px;
+  margin-top: 224px;
+  margin-left: auto;
+  font-size: 36px;
+  line-height: 48px;
+  color: white; }
+
+.tass-conditions__image-wrapper--1 {
+  position: absolute;
+  top: -176px;
+  right: 0;
+  z-index: 1;
+  width: 455px;
+  height: 559px; }
+
+.tass-conditions__image-wrapper--2 {
+  width: 796px;
+  height: 559px; }
+
+.tass-conditions__image {
+  width: 100%;
+  height: auto; }
+
+.tass-conditions {
+  background-image: url("../img/tass-conditions.png");
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.tass-customer__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 416px;
+  padding-bottom: 400px;
+  padding-right: 190px;
+  background-image: url("../img/tass-pattern-1.svg");
+  background-position-x: -230px;
+  background-size: 919px 901px;
+  background-repeat: no-repeat; }
+
+.tass-customer__description {
+  width: 400px;
+  margin-left: auto;
+  font-size: 46px;
+  line-height: 60px; }
+
+.tass-customer__image-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: -88px;
+  left: 144px;
+  width: 585px;
+  height: 1056px; }
+
+.tass-customer {
+  position: relative;
+  margin-top: -240px; }
+
+.tass-decoration-colors__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%; }
+  .tass-decoration-colors__icon--violet {
+    background-color: #8980c3;
+    border-color: #8980c3; }
+  .tass-decoration-colors__icon--dark-gray {
+    background-color: #292929;
+    border-color: #292929; }
+  .tass-decoration-colors__icon--ultra-gray {
+    background-color: #efefef;
+    border-color: #888888; }
+
+.tass-decoration-colors__item {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .tass-decoration-colors__item--last {
+    margin-bottom: 0; }
+
+.tass-decoration-colors {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.tass-decoration__container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 712px auto;
+  grid-row-gap: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 112px; }
+
+.tass-decoration__details {
+  margin-left: 0; }
+
+.tass-decoration__heading {
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  color: #292929; }
+
+.tass-decoration__image-wrapper {
+  grid-area: 1 / 2 / 3 / 3;
+  position: relative;
+  z-index: 0;
+  width: 310px;
+  height: 307px;
+  padding-top: 21px; }
+  .tass-decoration__image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 290px;
+    height: 290px;
+    background-color: #8980c3;
+    border-radius: 50%; }
+
+.tass-decoration__image {
+  width: 271px;
+  height: 286px; }
+
+.tass-decoration__item--colors {
+  grid-area: 1 / 1 / 3 / 2; }
+
+.tass-decoration__item--headings {
+  grid-area: 1 / 2 / 2 / 3; }
+
+.tass-decoration__item--content {
+  grid-area: 2 / 2 / 3 / 3; }
+
+.tass-decoration__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  grid-area: 2 / 1 / 3 / 2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 354px 282px;
+  grid-row-gap: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.tass-decoration__string--special-font {
+  font-family: "helveticaneuecyr", "Arial", sans-serif; }
+
+.tass-decoration__term {
+  color: #8980c3; }
+
+.tass-decoration__terms {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px; }
+  .tass-decoration__terms--narrow {
+    grid-template-columns: 110px 1fr; }
+  .tass-decoration__terms--wide {
+    grid-template-columns: 160px 1fr; }
+
+.tass-design__container {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-rows: auto 1fr repeat(3, auto);
+  grid-template-columns: 1fr 771px;
+  padding-top: 16px;
+  padding-bottom: 140px; }
+
+.tass-design__description {
+  padding-left: var(--tass-design-left-shift); }
+  .tass-design__description--top {
+    grid-area: 1 / 1 / 2 / -1;
+    width: 810px;
+    margin-bottom: 96px;
+    font-size: 27px;
+    line-height: 38px; }
+  .tass-design__description--middle {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    width: 530px;
+    font-size: 36px;
+    line-height: 48px;
+    color: #8980c3; }
+  .tass-design__description--bottom {
+    grid-area: -3 / 1 / -2 / 2;
+    width: 550px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    font-size: 27px;
+    line-height: 38px; }
+
+.tass-design__illustration {
+  grid-area: 2 / 1 / 3 / -1;
+  position: relative;
+  z-index: 0; }
+
+.tass-design__image-wrapper--flow-1 {
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+  width: 1046px;
+  height: 1313px; }
+
+.tass-design__image-wrapper--flow-2 {
+  grid-area: 3 / 1 / 4 / -1;
+  width: 794px;
+  height: 558px;
+  margin-left: var(--tass-design-left-shift); }
+
+.tass-design__image-wrapper--flow-3 {
+  grid-area: -2 / 1 / -1 / 2;
+  justify-self: end;
+  width: 415px;
+  height: 476px;
+  margin-bottom: 60px;
+  margin-right: 60px; }
+
+.tass-design__image-wrapper--long {
+  grid-area: 2 / 2 / -1 / 3;
+  z-index: 1;
+  width: 771px;
+  height: 3389px;
+  margin-left: auto;
+  -webkit-box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11); }
+
+.tass-design__image {
+  width: 100%;
+  height: auto; }
+
+.tass-design__pattern {
+  position: absolute;
+  z-index: 1; }
+  .tass-design__pattern--1 {
+    top: 1440px;
+    left: 0;
+    width: 357px;
+    height: 442px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right; }
+  .tass-design__pattern--2 {
+    top: 1070px;
+    left: 297px;
+    width: 500px;
+    height: 507px; }
+
+.tass-design {
+  --tass-design-left-shift: 64px;
+  background-image: linear-gradient(180deg, white 229px, #f5f5f5 2695px, white 2695px);
+  background-repeat: no-repeat; }
+
+.tass-intro__container {
+  padding-left: 224px;
+  padding-right: 224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 304px;
+  padding-bottom: 640px; }
+
+.tass-intro__heading {
+  width: 520px;
+  padding-top: 16px;
+  color: white; }
+
+.tass-intro__logo {
+  margin-right: 76px; }
+
+.tass-intro__subtitle {
+  font-size: 32px;
+  line-height: 42px; }
+
+.tass-intro__title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 60px;
+  line-height: 80px; }
+
+.tass-intro {
+  background-image: url("../img/tass-intro.png");
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.tass-logo__image {
+  width: 193px;
+  height: 193px; }
+
+.tass-page__container {
+  padding-bottom: 157px; }
+
+.tass-page__intro {
+  position: relative;
+  z-index: 1; }
