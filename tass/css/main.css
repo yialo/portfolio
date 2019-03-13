@@ -414,10 +414,6 @@ button {
   width: 796px;
   height: 559px; }
 
-.tass-conditions__image {
-  width: 100%;
-  height: auto; }
-
 .tass-conditions {
   background-image: url("../img/tass-conditions.png");
   background-position: top;
@@ -636,10 +632,6 @@ button {
   margin-left: auto;
   -webkit-box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11);
           box-shadow: -4px 23px 70px 0 rgba(0, 0, 0, 0.11); }
-
-.tass-design__image {
-  width: 100%;
-  height: auto; }
 
 .tass-design__pattern {
   position: absolute;
