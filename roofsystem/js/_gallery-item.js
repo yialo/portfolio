@@ -1,1 +1,1 @@
-$(document).ready(function(){const e={autoplay:!0,arrows:!1,dots:!1,infinite:!0,slidesToShow:1,slidesToScroll:1,speed:1e3,fade:!0};for(let l=1;l<=4;l++)$(`.gallery-item--${l} .gallery-item__pictures`).slick(e)});
+$(document).ready(function(){const e={autoplay:!0,arrows:!1,dots:!1,infinite:!0,slidesToShow:1,slidesToScroll:1,speed:1e3,fade:!0};for(let o=1;o<=4;o++)$(`.gallery-item--${o} .gallery-item__box--pictures`).slick(e)});
