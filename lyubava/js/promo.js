@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".promo__list").slick({autoplay:!0,arrows:!1,dots:!1,infinite:!0,slidesToShow:1,slidesToScroll:1,speed:1e3,fade:!1})});
+$(document).ready(function(){const o={arrows:!1,appendDots:$("#slick-dots-host"),autoplay:!0,dots:!0,fade:!1,infinite:!0,slidesToScroll:1,slidesToShow:1,speed:1e3};$(".promo__list").slick(o)});
