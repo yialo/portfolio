@@ -1,21 +1,5 @@
-Thumbs.db
-.DS_Store
-.idea
-*.ai
 *.log
-*.pdf
-*.psb
-*.psd
-*.sublime*
-*.code-workspace
-.vscode/
-
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
-
-# Node.js modules
+dist/
 node_modules/
 npm-debug.*
+spec/
