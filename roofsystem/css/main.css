@@ -3372,12 +3372,8 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-html.lb-disable-scrolling {
-  overflow: hidden;
-  /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
-  position: fixed;
-  height: 100vh;
-  width: 100vw; }
+body.lb-disable-scrolling {
+  overflow: hidden; }
 
 .lightboxOverlay {
   position: absolute;

@@ -528,7 +528,7 @@ input[type="radio"].visually-hidden {
     left: 20px;
     width: 12px;
     height: 12px;
-    background-color: #fff; }
+    background-color: #ffffff; }
 
 @media (min-width: 1220px) {
   .about__list-container {
@@ -773,9 +773,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .articles__button {
-    width: 380px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto;
+    width: 380px; } }
 
 @media (min-width: 1220px) {
   .articles__button {
@@ -906,6 +906,8 @@ input[type="radio"].visually-hidden {
             appearance: none; }
   .calculator__field--text::-webkit-input-placeholder {
     color: white; }
+  .calculator__field--text::-moz-placeholder {
+    color: white; }
   .calculator__field--text:-ms-input-placeholder {
     color: white; }
   .calculator__field--text::-ms-input-placeholder {
@@ -962,7 +964,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: white;
   border-style: solid;
-  line-height: 60px;
   border-width: 2px; }
   .calculator__button--reset {
     background-color: transparent;
@@ -1055,6 +1056,8 @@ input[type="radio"].visually-hidden {
   background-color: white;
   border-style: none; }
   .call-request__field::-webkit-input-placeholder {
+    color: #7b7b7b; }
+  .call-request__field::-moz-placeholder {
     color: #7b7b7b; }
   .call-request__field:-ms-input-placeholder {
     color: #7b7b7b; }
@@ -1261,6 +1264,8 @@ input[type="radio"].visually-hidden {
   border-style: none; }
   .connection__field::-webkit-input-placeholder {
     color: #7b7b7b; }
+  .connection__field::-moz-placeholder {
+    color: #7b7b7b; }
   .connection__field:-ms-input-placeholder {
     color: #7b7b7b; }
   .connection__field::-ms-input-placeholder {
@@ -1398,6 +1403,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid white; }
   .consultation__field::-webkit-input-placeholder {
     color: white; }
+  .consultation__field::-moz-placeholder {
+    color: white; }
   .consultation__field:-ms-input-placeholder {
     color: white; }
   .consultation__field::-ms-input-placeholder {
@@ -1408,6 +1415,8 @@ input[type="radio"].visually-hidden {
     outline: none;
     border-color: cyan; }
   .consultation__field:focus::-webkit-input-placeholder {
+    visibility: hidden; }
+  .consultation__field:focus::-moz-placeholder {
     visibility: hidden; }
   .consultation__field:focus:-ms-input-placeholder {
     visibility: hidden; }
@@ -1584,9 +1593,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .contacts__button {
-    width: calc((100% - 40px) / 2);
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto;
+    width: calc((100% - 40px) / 2); } }
 
 @media (min-width: 1220px) {
   .contacts__button {
