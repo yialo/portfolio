@@ -2,7 +2,7 @@
 
 Список проектов
 
-- [Живой Звук](https://yialo.github.io/portfolio/projects/livesound/index.html)
+- [Живой Звук](https://yialo.github.io/portfolio/projects/livesound/index.html){:target="_blank"}
 - [Оптон](https://yialo.github.io/portfolio/projects/opton/start.html)
 - [CTIG](https://yialo.github.io/portfolio/projects/ctig/start.html)
 - [Roofsystem](https://yialo.github.io/portfolio/projects/roofsystem/index.html)
